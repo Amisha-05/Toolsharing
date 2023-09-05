@@ -229,7 +229,7 @@
   height: 100vh;
   position: relative;
   right:500px;
-  
+
 
 }
 
@@ -241,39 +241,69 @@
   width: 500px;
   position: relative;
   left:350px;
+  top:40px;
   padding: 20px;
   border: none;
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #FFF8E7;
+  box-shadow: 20px 2px 40px rgba(103, 102, 102, 0.1);
+  background-color: rgb(225, 233, 235);
+  font-family: "DM Serif Display", serif;
  
 }
+.extra-tool-text {
+  text-align: center;
+  position: relative;
+  left:250px;
+}
 
-.upload-form label {
+.extra-tool-text h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(217, 217, 243);
+  box-shadow: #3FF4C9;
+  font-family: "DM Serif Display", serif; 
+  /* Change the color to your preference */
+}
+.titlename
+{  font-family: "DM Serif Display", serif;
+  font-size: 1.2rem;
+  color:rgb(66, 66, 137);
   font-weight: bold;
   padding:5px;
+
 }
 
 .upload-form input,
 .upload-form textarea {
   width: 100%;
-  padding: 8px;
-  border: 2px solid #f9c8c8;
-  border-radius: 5px;
+  padding: 20px;
+  border: 2px solid rgb(180, 180, 222);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-family: "DM Serif Display", serif;
+  color:#0b756e;
+  font-size:1.2rem;
 }
 
 .upload-content .uploadbutton{
   padding: 10px 20px;
-  background-color: brown;
-  color: rgb(220, 164, 164);
+  background-color: rgb(8, 8, 84);
+  color: #3FF4C9;
   border: none;
-
-  border-radius: 5px;
+  font-size:1.7rem;
+  border-radius: 20px;
   cursor: pointer;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 .upload-form button:hover{
-  background:brown;
-  box-shadow:0 0 50px #ff96ad, 0 0 50px #c16f81, 0 0 50px #ff96ad,0 0 200px #ff96ad;
+  background:#1a7863;
+  box-shadow:0 0 50px blue, 0 0 50px white, 0 0 50px white,0 0 200px blue;
 }
 .upload-page {
   display: flex;
@@ -288,8 +318,87 @@
   background-position: center;
 }
 
-.bhashan{
-  font-size: 2rem;
- 
+
+.upload-page {
+  display: flex;
+}
+.upload-content {
+  flex: 1;
+  padding: 20px;
+}
+.drag-area {
+  border: 2px dashed #fff;
+  height: 400px;
+  width: 500px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  top:100px;
+  right:50px;
+  
+}
+.drag-area.active {
+  border: 2px solid #fff;
+}
+.drag-area .icon {
+  font-size: 100px;
+  color: #fff;
+}
+.drag-area header {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+}
+.drag-area span {
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  margin: 10px 0 15px 0;
+}
+/* Browse Button */
+.drag-area button {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background: #fff;
+  color: #0fb8ac;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px; /* Adjust the margin as needed */
+}
+
+/* Remove Button */
+.remove-button {
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: 500;
+  background: #ff6b6b; /* Red background color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; /* Adjust the margin as needed */
+}
+
+/* Uploaded File Message */
+.uploaded-file {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; 
+  /* Adjust the margin as needed */
+}
+
+.uploaded-file p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 10px;
+  color:#c7fffb; /* Adjust the margin as needed */
 }
 

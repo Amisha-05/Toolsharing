@@ -1,7 +1,6 @@
 import './App.css';
 import Frontpage from './Home/Frontpage';
-import UploadPost from './Pages/Uploaditems'; // Import the new page component
-
+import Uploaditems from './Pages/Uploaditems'; // Import the new page compon
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -10,8 +9,8 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Frontpage />} /> {/* Your Frontpage */}
-          <Route path="/upload" element={<UploadPost />} /> {/* Upload a Post Page */}
-          <Route path="/profile" element={<UploadPost />} /> {/* Upload a Post Page */}
+          <Route path="/upload" element={<Uploaditems />} /> {/* Upload a Post Page */}
+          <Route path="/profile" element={<Uploaditems />} /> {/* Upload a Post Page */}
           
         </Routes>
       </div>

@@ -113,6 +113,7 @@
     padding-bottom: 0px; /* Add some spacing between the text and the border */
     margin-bottom: 5px; 
     background: linear-gradient(to right, #49687c, transparent, transparent, rgb(234, 233, 233));
+   
   }
   .sidebar-header::before {
     content: ''; /* Create a pseudo-element for the line */
@@ -133,14 +134,6 @@
     transform: scaleX(1); /* Scale the line to its full width on hover */
     transform-origin: left; /* Start the transformation from the left */
   }
- 
-  
-  
-  
-  
-  
-  
-  
   .logo-img {
     width: 65px; /* Set the width to your desired size */
     height: 65px; /* Set the height to your desired size */
@@ -158,5 +151,5 @@
     font-family: 'DM Serif Display', sans-serif; 
     color:#85d2c0;
     margin-left: 10px;
-    colro:rgb(16, 16, 165)
+  
   }
