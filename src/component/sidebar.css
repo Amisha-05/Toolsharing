@@ -1,14 +1,20 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Oswald:wght@300&family=Playfair+Display:wght@400;600&family=Roboto+Slab&display=swap');
+
 .sidebar {
   width: 250px;
   height: 100vh;
-  background-color: #FFF5E1;
-  color: brown;
+  background-color: rgb(2, 2, 42);
+  color:#3FF4C9;
   padding-top: 10px;
   font-size: 22px;
   font-family: 'Roboto Slab', serif;
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: fixed;
+  box-shadow:  30px 0px 10px rgba(56, 54, 54, 0.2);
+ 
 }
 
 .left-aligned-link {
@@ -33,7 +39,7 @@
 }
 
 .sidebar-menu a {
-  color: #4f2727;
+  color: grey;
   text-decoration: none;
   padding: 10px;
   display: block;
@@ -41,7 +47,7 @@
 }
 
 .sidebar-menu a:hover {
-  background-color: rgb(239, 191, 191);
+  background-color: grey;
 }
 
 .smaller-icon {
@@ -55,39 +61,9 @@
   color: #333;
 }
 
-.upload-form {
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
 
-.upload-form label {
-  margin-top: 15px;
-}
 
-.upload-form input,
-.upload-form textarea {
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
 
-.upload-form button {
-  padding: 10px;
-  background-color: #feebd8;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.upload-form button:hover {
-  background-color: #fdd1a5;
-}
 
   .sidebar-menu li {
     margin-bottom: 10px;
@@ -96,7 +72,7 @@
   }
   
   .sidebar-menu a {
-    color: #4f2727;
+    color: blue;
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -106,13 +82,14 @@
   
   
   .sidebar-menu a:hover {
-    background-color: rgb(239, 191, 191);
+    background-color: rgb(201, 226, 235);
   }
   
   .smaller-icon {
     width: 30px; /* Set a smaller width */
     height: 40px; /* Set a smaller height */
-    margin-right: 4px; /* Add some spacing between icon and text */
+    margin-right: 4px; 
+    color:blue;/* Add some spacing between icon and text */
   }
   .flexCenter {
     display: flex;
@@ -120,8 +97,66 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    font-family: 'DM Serif Display', sans-serif;
   }
 
   .sidebar-menu li:nth-last-child(2) {
     margin-top: auto;
+  }
+  
+  .sidebar-header {
+    display: flex; /* Use flexbox to arrange items horizontally */
+    align-items: center;
+    position: relative;
+    right:10px; /* Vertically center the items */
+    /* Add a border to the bottom of the element */
+    padding-bottom: 0px; /* Add some spacing between the text and the border */
+    margin-bottom: 5px; 
+    background: linear-gradient(to right, #49687c, transparent, transparent, rgb(234, 233, 233));
+  }
+  .sidebar-header::before {
+    content: ''; /* Create a pseudo-element for the line */
+    position: absolute; /* Position it absolutely relative to the parent */
+    bottom: 0; /* Place it at the bottom of the text */
+    left: 0; /* Start from the left edge of the parent */
+    width: 100%; /* Make it span the entire width of the parent */
+    height: 2px; /* Set the line height */
+    background: linear-gradient(to right, blue, transparent, transparent, white); /* Gradient background for highlights */
+    box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    transform: scaleX(0); /* Initially, hide the line with scale transform */
+    transform-origin: right; /* Start the transformation from the right */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+  }
+  
+  /* Hover effect to reveal the line */
+  .sidebar-header:hover::before {
+    transform: scaleX(1); /* Scale the line to its full width on hover */
+    transform-origin: left; /* Start the transformation from the left */
+  }
+ 
+  
+  
+  
+  
+  
+  
+  
+  .logo-img {
+    width: 65px; /* Set the width to your desired size */
+    height: 65px; /* Set the height to your desired size */
+    margin-right: 0px;
+    margin-left:0px; /* Add margin to create space between image and text */
+  }
+  
+  .sidebar-header p {
+    margin: 0;
+    font-family: 'DM Serif Display', sans-serif; 
+      /* Remove default margin on the <p> element */
+  }
+  .sidebar-menu-text
+  {
+    font-family: 'DM Serif Display', sans-serif; 
+    color:#85d2c0;
+    margin-left: 10px;
+    colro:rgb(16, 16, 165)
   }

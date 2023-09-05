@@ -16,7 +16,8 @@ const UploadItems = () => {
     <div className="upload-page">
       <Sidebar />
       <div className="upload-content">
-        <h1 className="bhashan">Upload the items and share them</h1>
+    
+        <div className="bhashan"><p>"Got Extra Tools? Share the Love!"</p></div>
         <form className="upload-form">
         <label>Item Name:</label>
           <input type="text" value={itemName} onChange={(e) => setItemName(e.target.value)} />

@@ -18,7 +18,7 @@ const MenuCrd = ({menuData}) => {
                 
                 <span className='card-author subtle'> {category}</span>
          
-                <h1 classnName='card-title'>{Name}</h1>
+                <h1 className='card-title'>{Name}</h1>
                 
                 <span className='card-description subtle'>
                     Lorem ipsum dolor sit amet consectetur, 
