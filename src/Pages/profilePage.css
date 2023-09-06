@@ -1,0 +1,147 @@
+/* profilePage.css */
+body {
+  width: 100%; /* Ensure the body covers the entire viewport width */
+  height: 100%; /* Ensure the body covers the entire viewport height */
+  overflow:scroll; /* Hide any content that overflows the fixed dimensions */
+}
+
+
+.gradient {
+  background: linear-gradient(55deg, #3FF4C9, #020946);
+}
+
+.content {
+  margin-left: 250px; /* Adjust this value to match the width of your sidebar */
+  padding: 20px; /* Add padding to separate content from the sidebar */
+  transition: margin 0.3s; /* Add smooth transition for better user experience */
+}
+
+/* Media query to adjust content margin on smaller screens */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0; /* Remove margin on smaller screens to allow content to take full width */
+  }
+}
+
+.recphotos{
+  font-size: 25px;
+}
+
+.photocard {
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: black !important;
+  display: flex;
+  flex-direction: row;
+}
+
+.card-image-container {
+  margin-left: 1rem;
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #dee2e6;
+}
+
+.edit-profile-button {
+  padding: 10px 20px;
+  background-color: rgb(8, 8, 84);
+  color: #3FF4C9;
+  border: none;
+  font-size:1.7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.edit-profile-button:hover {
+  background:#1a7863;
+  box-shadow:0 0 50px blue, 0 0 50px rgb(29, 98, 130), 0 0 50px rgb(112, 190, 241),0 0 200px blue;
+}
+
+.profile-info {
+  margin-left: 1rem;
+  margin-top: 1.25rem;
+}
+
+.profile-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 30px;
+}
+
+.profile-location {
+  font-size: 1rem;
+  color: white; /* Add your desired color value here */
+}
+
+.recent-photos-section {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align photos horizontally from the left */
+}
+
+/* Individual photos */
+.photo-card {
+  margin-right: 1rem; /* Add margin between photos */
+  flex-basis: calc(50% - 0.5rem); /* Set the width of each photo to 50% minus some margin */
+}
+
+.photo-image {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Adjust the gap as needed */
+}
+
+.photo-image {
+  width: calc(50% - 0.5rem); /* Set the width to 50% minus the gap */
+  border-radius: 0.5rem;
+}
+
+.text-muted{
+  margin-left: 28px;
+}
+
+.profile-info {
+  margin-left: 6rem;
+  margin-top: 5.25rem;
+  margin-bottom: 10.25rem;
+}
+
+.profile-stats {
+  display: flex;
+    justify-content: space-between;
+    margin-top: 13rem;
+    margin-left: -15rem;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.text, .text1 {
+  text-align: center;
+  margin-bottom: 0.5rem; /* Add margin between statistics */
+}
+
+.text {
+  font-size: 1.25rem;
+}
+
+.text1 {
+  font-size: smaller;
+  color: #6c757d;
+}
+
