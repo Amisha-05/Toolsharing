@@ -1,12 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './style.css';
 import Menu from "./toolsApi";
 import MenuCrd from "./menuCrd";
 import Sidebar from "../component/Sidebar"; // Import your Sidebar component
 
 const Frontpage = () => {
-  const [menuData, setMenuData] = useState(Menu);
+  const [menuData, setMenuData] = useState([{}]);
   const [searchQuery, setSearchQuery] = useState('');
+  useEffect(() =>{
+    fetch("/rawData").then(
+      res => res.json()
+    ).then(
+      data =>{
+        setMenuData(data)
+        console.log(data)
+      }  
+    )
+  }, [])
 
   const handleSearchChange = (event) => {
     const searchText = event.target.value.toLowerCase();
